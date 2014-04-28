@@ -23,11 +23,15 @@ When then call push(char type, char title, char body).
 
 Example;
 
-int main()
-{
-	setup();
-	push("note", "This is the title","This is the message body");
-}
+-int main()
+-
+-{
+-
+-	setup();
+-	
+-	push("note", "This is the title","This is the message body");
+-	
+-}
 
 COMMUNITY
 

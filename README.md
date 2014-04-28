@@ -2,6 +2,7 @@ C-library-for-Pushbullet
 ========================
 
 Allows an easy way to implement the pushbullet api into your C programs.
+This library could not be possible without the amazing API from pushbullet https://www.pushbullet.com/
 
 With this library you will be able to easily add pushbullet support to your C programs with two easy commands, "setup()", and "push()".
 
@@ -24,3 +25,16 @@ int main()
 	setup();
 	push("note", "This is the title","This is the message body");
 }
+
+COMMUNITY
+We would love your help to clean up our code and help us include additional features
+Upcoming Features
+	- Able to send any type of notification,
+		-URL
+		-FILE
+	
+	- Push to friends devices.
+
+CONTRIBUTIONS
+Carl A. Neuhaus
+Simon G. Ralph

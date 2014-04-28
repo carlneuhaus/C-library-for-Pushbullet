@@ -138,14 +138,14 @@ void setup()
 	{
 		//find first iden and make it first place
 		string_device_short = strstr(string_device,"iden");
-		strncpy(devices[count], string_device_short +8, 22);
-		string_device = string_device_short + 1;
+		strncpy(devices[count], string_device_short +8, 22); //magic numbers that make it work
+		string_device = string_device_short + 1; //move onto the next occurance 
 
 		string_name_short = strstr(string_name,"model");
-		strncpy(names[count], string_name_short + 9, 7);
-		string_name = string_name_short + 1;
+		strncpy(names[count], string_name_short + 9, 7); //magic numbers that make it work
+		string_name = string_name_short + 1; //move onto the next occurance
 
-		printf("%d %s %s\n",count, names[count],devices[count]);
+		printf("%d %s %s\n",count, names[count], devices[count]);
 
 		count++;
 	}

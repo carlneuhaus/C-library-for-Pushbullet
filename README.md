@@ -16,6 +16,8 @@ At the moment you are only able to push a 'note' to your devices.
 
 To use you only need to include the push.h library in your program and have push.h in your program folder.
 
+You must create a free pushbullet account and note down your API number.
+
 **USUAGE**
 
 Before you can push you must call setup().

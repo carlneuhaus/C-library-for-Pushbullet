@@ -12,13 +12,13 @@ This library was thrown together quite quickly for use in a project and a lot of
 
 You are able to send links, address and notes at the moment.  
 
-**INSTALLATION **
+**INSTALLATION**
 
 To use you only need to include the push.h library in your program and have push.h in your program folder.
 
 You must create a free pushbullet account and note down your API number.
 
-**USUAGE**
+**USAGE**
 
 Before you can push you must call setup().
 When then call push(char type, char title, char body). 

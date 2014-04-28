@@ -17,8 +17,6 @@ void push(char *types, char *title, char *body)
 		sprintf(msg_title, "'%s'",title);
 		sprintf(msg_body, "'%s'",body);
 
-
-		printf("%s",title);
 		char command[400];
 	    // write total string to command, including "> report.json" 
 	    // to have transmission report (JSON format) sent to txt file not stdin.

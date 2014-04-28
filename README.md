@@ -10,7 +10,7 @@ This library was thrown together quite quickly for use in a project and a lot of
 
 **WORKING FEATURES**
 
-At the moment you are only able to push a 'note' to your devices.
+You are able to send links, address and notes at the moment.  
 
 **INSTALLATION **
 
@@ -43,12 +43,11 @@ We would love your help to clean up our code and help us include additional feat
 Upcoming Features
 
 	- Able to send any type of notification,
-	
-		-URL
 		
-		-FILE
+		-FILE etc
 	
 	- Push to friends devices.
+		- Friends devices do not show up in the api call. 		not sure if this is a problem on our end or the 		api's end.
 
 **CONTRIBUTIONS**
 

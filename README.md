@@ -9,12 +9,15 @@ With this library you will be able to easily add pushbullet support to your C pr
 This library was thrown together quite quickly for use in a project and a lot of features are yet to work. 
 
 WORKING FEATURES
+
 At the moment you are only able to push a 'note' to your devices.
 
 INSTALLATION 
+
 To use you only need to include the push.h library in your program and have push.h in your program folder.
 
 USUAGE
+
 Before you can push you must call setup().
 When then call push(char type, char title, char body). 
 
@@ -27,6 +30,7 @@ int main()
 }
 
 COMMUNITY
+
 We would love your help to clean up our code and help us include additional features
 Upcoming Features
 
@@ -39,5 +43,7 @@ Upcoming Features
 	- Push to friends devices.
 
 CONTRIBUTIONS
+
 Carl A. Neuhaus
+
 Simon G. Ralph

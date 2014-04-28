@@ -12,7 +12,7 @@ WORKING FEATURES
 At the moment you are only able to push a 'note' to your devices.
 
 INSTALLATION 
-To use you only need to include the push.c library in your program and have push.c in your program folder.
+To use you only need to include the push.h library in your program and have push.h in your program folder.
 
 USUAGE
 Before you can push you must call setup().
@@ -29,8 +29,11 @@ int main()
 COMMUNITY
 We would love your help to clean up our code and help us include additional features
 Upcoming Features
+
 	- Able to send any type of notification,
+	
 		-URL
+		
 		-FILE
 	
 	- Push to friends devices.

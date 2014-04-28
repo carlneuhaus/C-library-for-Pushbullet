@@ -6,32 +6,80 @@
 char apiKey[MAXLEN_API];
 char *deviceToSendIdentifer;
 
-
-
-
 void push(char *types, char *title, char *body)
 { 
 	char msg_title[400];
 	char msg_body[400];
 
-	sprintf(msg_title, "'%s'",title);
-	sprintf(msg_body, "'%s'",body);
+	if((strstr(types,"note")))
+	{
+		
+		sprintf(msg_title, "'%s'",title);
+		sprintf(msg_body, "'%s'",body);
 
 
-	printf("%s",title);
-	char command[400];
-    // write total string to command, including "> report.json" 
-    // to have transmission report (JSON format) sent to txt file not stdin.
-    sprintf(command, "curl https://api.pushbullet.com/api/pushes \
-        -u %s: \
-        -d device_iden=%s \
-        -d type=%s \
-        -d title=%s \
-        -d body=%s \
-        -X POST \
-        > report.json", apiKey, deviceToSendIdentifer, types, msg_title, msg_body);
+		printf("%s",title);
+		char command[400];
+	    // write total string to command, including "> report.json" 
+	    // to have transmission report (JSON format) sent to txt file not stdin.
+	    sprintf(command, "curl https://api.pushbullet.com/api/pushes \
+	        -u %s: \
+	        -d device_iden=%s \
+	        -d type=%s \
+	        -d title=%s \
+	        -d body=%s \
+	        -X POST \
+	        > report.json", apiKey, deviceToSendIdentifer, types, msg_title, msg_body);
 
-        system(command);
+	        system(command);
+	}
+
+	if((strstr(types,"link")))
+	{
+		
+		sprintf(msg_title, "'%s'",title);
+		sprintf(msg_body, "'%s'",body);
+
+
+		printf("%s",title);
+		char command[400];
+	    // write total string to command, including "> report.json" 
+	    // to have transmission report (JSON format) sent to txt file not stdin.
+	    sprintf(command, "curl https://api.pushbullet.com/api/pushes \
+	        -u %s: \
+	        -d device_iden=%s \
+	        -d type=%s \
+	        -d title=%s \
+	        -d url=%s \
+	        -X POST \
+	        > report.json", apiKey, deviceToSendIdentifer, types, msg_title, msg_body);
+
+	        system(command);
+	}
+
+	if((strstr(types,"address")))
+	{
+		
+		sprintf(msg_title, "'%s'",title);
+		sprintf(msg_body, "'%s'",body);
+
+
+		printf("%s",title);
+		char command[400];
+	    // write total string to command, including "> report.json" 
+	    // to have transmission report (JSON format) sent to txt file not stdin.
+	    sprintf(command, "curl https://api.pushbullet.com/api/pushes \
+	        -u %s: \
+	        -d device_iden=%s \
+	        -d type=%s \
+	        -d name=%s \
+	        -d address=%s \
+	        -X POST \
+	        > report.json", apiKey, deviceToSendIdentifer, types, msg_title, msg_body);
+
+	        system(command);
+	}
+
 }
 
 void setup()
@@ -39,8 +87,6 @@ void setup()
 	int count = 0;
 	int deviceToSendNumber;
 
-
-	//char apiKey[MAXLEN_API];
 	char buffer[400];
 
 	char devices[3][22+1];

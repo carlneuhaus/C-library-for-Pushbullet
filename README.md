@@ -51,6 +51,6 @@ Upcoming Features
 
 **CONTRIBUTIONS**
 
-Carl A. Neuhaus
+Carl
 
-Simon G. Ralph
+Simon
